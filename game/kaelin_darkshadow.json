@@ -1,0 +1,77 @@
+{
+  "name": "Kaelin Darkshadow",
+  "description": "A cunning thief and charismatic smuggler with ties to the city's underworld.",
+  "personality": {
+    "attitudeTowardPlayer": "Suspicious",
+    "disposition": "Cynical",
+    "motivations": "Revenge-driven"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "Average",
+    "knowledgeAreas": [
+      "Street Smarts",
+      "Smuggling Routes",
+      "City Politics"
+    ]
+  },
+  "communication": {
+    "speechAccent": "Southern American",
+    "mannerisms": "Fast-talking and confident, with an occasional smirk",
+    "pacing": "Quick and nimble",
+    "tone": "Sarcastic",
+    "keyPhrases": [
+      "I'm not looking for trouble, but I'll take it if you're gonna throw it my way.",
+      "You want something? I'll get it for you. For a price."
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Acquaintance of Victor LaGraine, a powerful crime lord",
+      "Enemy of the Red Vipers, a rival gang"
+    ],
+    "alignment": "Ambiguous"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Specialist",
+    "powersOrSkills": [
+      "Pickpocketing",
+      "Sleight of Hand",
+      "Persuasion"
+    ],
+    "questUtility": [
+      "Quest Giver",
+      "Information Broker (collects and shares rumors)"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "Tattoos depicting various cities around the world",
+        "A scar above his left eyebrow from a past altercation"
+      ],
+      "wardrobe": "Leather jacket and dark pants, with an eye patch to conceal his injured eye",
+      "bodyLanguage": "Often crosses his arms or leans against surfaces when speaking"
+    },
+    "presence": "Mysterious"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player offers him a deal he can't refuse",
+        "reaction": "Becomes charming and negotiates the terms of the agreement"
+      },
+      {
+        "trigger": "Player insults his skills or reputation",
+        "reaction": "Loses composure and becomes aggressive"
+      }
+    ],
+    "hintsAndClues": [
+      "Suggests a hidden safehouse in an abandoned warehouse",
+      "Mentioned a mysterious figure known only as 'The Archon'"
+    ],
+    "progression": {
+      "evolution": "If the player completes a high-risk heist for him, he becomes a valuable ally with access to exclusive smuggling routes.",
+      "potentialBetrayal": "If the player betrays him or tries to steal from him, he will turn against them and try to sabotage their operations."
+    }
+  }
+}

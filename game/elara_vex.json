@@ -1,0 +1,76 @@
+{
+  "name": "Elara Vex",
+  "description": "A charismatic smuggler who evades the authorities by exploiting ancient trade routes.",
+  "personality": {
+    "attitudeTowardPlayer": "Friendly",
+    "disposition": "Mischievous",
+    "motivations": "Altruistic"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "Average",
+    "knowledgeAreas": [
+      "Cartography (knows hidden routes and shortcuts)",
+      "Mechanics (expertise in ship repair and maintenance)",
+      "Economics (understands the value of rare commodities)"
+    ]
+  },
+  "communication": {
+    "speechAccent": "Southern American",
+    "mannerisms": "Bubbly and energetic, often using hand gestures to emphasize points",
+    "pacing": "Fast-paced and enthusiastic",
+    "tone": "Warm and inviting",
+    "keyPhrases": [
+      "I've got a map that'll change your life, kid.",
+      "The right price is always negotiable.",
+      "Trust me, this will be worth it."
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Associates with a group of rebels fighting against an oppressive regime",
+      "Acquaintance of a powerful crime lord who occasionally provides her with jobs"
+    ],
+    "alignment": "Rebel"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Strong",
+    "powersOrSkills": [
+      "Piloting (expertise in ship handling and navigation)",
+      "Persuasion (can talk her way out of most situations)"
+    ],
+    "questUtility": [
+      "Quest Giver",
+      "Smuggling Expert (can transport rare or contraband items)"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "A collection of colorful tattoos depicting various maps and landmarks"
+      ],
+      "wardrobe": "Leather jacket and jeans, with a utility belt and boots",
+      "bodyLanguage": "Often leans in when listening to someone, using her body language to convey interest"
+    },
+    "presence": "Subtle"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player offers to help her with a smuggling run",
+        "reaction": "Becomes excited and shares a crucial tip about the route"
+      },
+      {
+        "trigger": "Player asks for her help in infiltrating a heavily guarded facility",
+        "reaction": "Provides advice on how to navigate the layout, but warns of potential dangers"
+      }
+    ],
+    "hintsAndClues": [
+      "Leaves a small note with cryptic coordinates on a table",
+      "Suggests visiting an underground market for rare goods"
+    ],
+    "progression": {
+      "evolution": "If the player helps her uncover a conspiracy, she becomes a valuable ally in the rebellion.",
+      "potentialBetrayal": "If the player betrays her trust, she will seek revenge against them."
+    }
+  }
+}

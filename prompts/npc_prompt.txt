@@ -1,0 +1,142 @@
+You are helping to build an RPG adventure in the style of White Wolf's World of Darkness. All NPCs must strictly adhere to the following JSON schema, which is designed to match a Pydantic class.
+
+**Schema:**
+
+{
+    "name": "string",
+    "description": "string",
+    "personality": {
+        "attitudeTowardPlayer": "Friendly | Neutral | Suspicious | Hostile",
+        "disposition": "Optimistic | Cynical | Mischievous | Stoic",
+        "motivations": "Self-serving | Altruistic | Revenge-driven | Curious"
+    },
+    "cognitiveAttributes": {
+        "intelligence": "Low | Average | High | Genius",
+        "knowledgeAreas": ["string", "string", ...]
+    },
+    "communication": {
+        "speechAccent": "string | null",
+        "mannerisms": "string | null",
+        "pacing": "string | null",
+        "tone": "string | null",
+        "keyPhrases": ["string", "string", ...] | null
+    },
+    "relationships": {
+        "connections": ["string", "string", ...] | null,
+        "alignment": "string | null"
+    },
+    "roleSpecificTraits": {
+        "combatAbility": "Strong | Weak | Specialist",
+        "powersOrSkills": ["string", "string", ...] | null,
+        "questUtility": ["string", "string", ...] | null
+    },
+    "physicalTraits": {
+        "appearance": {
+            "uniqueFeatures": ["string", "string", ...] | null,
+            "wardrobe": "string | null",
+            "bodyLanguage": "string | null"
+        },
+        "presence": "Subtle | Commanding | Mysterious"
+    },
+    "interactivity": {
+        "behaviorTriggers": [
+            {
+                "trigger": "string",
+                "reaction": "string"
+            },
+            ...
+        ] | null,
+        "hintsAndClues": ["string", "string", ...] | null,
+        "progression": {
+            "evolution": "string | null",
+            "potentialBetrayal": "string | null"
+        } | null
+    }
+}
+
+**Instructions:**
+- Generate a unique NPC that adheres to the above schema.
+- Ensure all fields are populated with valid values. Optional fields can be set to `null` if they do not apply.
+- Output the NPC strictly in JSON format. Do not include any additional text or explanations outside the JSON block.
+
+Here is an example character:
+
+{
+    "name": "Marlena Graves",
+    "description": "A reclusive occultist who runs a magical pawn shop in a hidden alleyway.",
+    "personality": {
+        "attitudeTowardPlayer": "Neutral",
+        "disposition": "Stoic",
+        "motivations": "Self-serving"
+    },
+    "cognitiveAttributes": {
+        "intelligence": "High",
+        "knowledgeAreas": [
+            "Supernatural Lore",
+            "Hidden Secrets",
+            "Mystical Knowledge"
+        ]
+    },
+    "communication": {
+        "speechAccent": "Slight Eastern European",
+        "mannerisms": "Formal and deliberate, with occasional cryptic metaphors",
+        "pacing": "Slow and deliberate",
+        "tone": "Calm and composed",
+        "keyPhrases": [
+            "The veil between worlds is thinner than you think.",
+            "Knowledge is power, and power comes at a price.",
+            "Beware what you seek, for it may find you first."
+        ]
+    },
+    "relationships": {
+        "connections": [
+            "Allied with a secret cabal of mystics",
+            "Enemy of Luther Kaine, a charismatic cult leader"
+        ],
+        "alignment": "Conflicted"
+    },
+    "roleSpecificTraits": {
+        "combatAbility": "Weak",
+        "powersOrSkills": [
+            "Divination (can glimpse future events)",
+            "Enchanting (creates talismans and protective charms)"
+        ],
+        "questUtility": [
+            "Quest Giver",
+            "Gatekeeper (controls access to rare magical materials)"
+        ]
+    },
+    "physicalTraits": {
+        "appearance": {
+            "uniqueFeatures": [
+                "Heterochromia: one green eye, one blue eye",
+                "A large, ornate silver ring with a glowing sapphire"
+            ],
+            "wardrobe": "Dark robes with silver embroidery resembling constellations",
+            "bodyLanguage": "Often clasps her hands together and tilts her head slightly when thinking"
+        },
+        "presence": "Commanding"
+    },
+    "interactivity": {
+        "behaviorTriggers": [
+            {
+                "trigger": "Player lies to her",
+                "reaction": "Becomes hostile and refuses to assist"
+            },
+            {
+                "trigger": "Player gifts her a rare magical item",
+                "reaction": "Becomes friendly and shares a crucial secret"
+            }
+        ],
+        "hintsAndClues": [
+            "Subtly mentions a hidden artifact in a nearby abandoned church",
+            "Occasionally hums a tune linked to an ancient ritual"
+        ],
+        "progression": {
+            "evolution": "If the player helps her reclaim a stolen artifact, she becomes a powerful ally with access to forbidden magic.",
+            "potentialBetrayal": "If the player aligns with Luther Kaine, she will turn against them."
+        }
+    }
+}
+
+Generate a new character based on this schema and return it as JSON only.

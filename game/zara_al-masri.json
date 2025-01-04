@@ -1,0 +1,77 @@
+{
+  "name": "Zara al-Masri",
+  "description": "A charismatic street urchin with an uncanny ability to navigate the city's hidden underbelly.",
+  "personality": {
+    "attitudeTowardPlayer": "Friendly",
+    "disposition": "Mischievous",
+    "motivations": "Altruistic"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "Average",
+    "knowledgeAreas": [
+      "Urban Survival",
+      "Scavenging and Foraging",
+      "Stealth and Deception"
+    ]
+  },
+  "communication": {
+    "speechAccent": "Thick urban accent with a hint of Arabic",
+    "mannerisms": "Fast-paced hand gestures and an infectious grin",
+    "pacing": "Quick and energetic",
+    "tone": "Confident and persuasive",
+    "keyPhrases": [
+      "You're on the right track, but be careful who you trust.",
+      "The city's got secrets, and I'm happy to share them... for a price.",
+      "Stick with me, and we'll get out of this mess together."
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Close friend of Khaled Hassan, a local smuggler",
+      "Informant for the Brotherhood of Order, a secret society"
+    ],
+    "alignment": "Chaotic Good"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Strong",
+    "powersOrSkills": [
+      "Street Fighting (expertise in close combat)",
+      "Persuasion and Deception (skilled at talking her way out of trouble)"
+    ],
+    "questUtility": [
+      "Quest Giver",
+      "Guide and Escort"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "Tattoos depicting various city landmarks and symbols",
+        "A scar above her left eyebrow from a childhood fight"
+      ],
+      "wardrobe": "Practical clothing suitable for urban exploration, including leather jackets and ripped jeans",
+      "bodyLanguage": "Often leans in close to hear what's being said, with an air of intense focus"
+    },
+    "presence": "Subtle"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player offers her a reward for completing a quest",
+        "reaction": "Becomes more aggressive and competitive in the request process"
+      },
+      {
+        "trigger": "Player refuses to listen to her advice",
+        "reaction": "Sighs and rolls her eyes, but continues to offer guidance"
+      }
+    ],
+    "hintsAndClues": [
+      "Leaves a cryptic note with a hidden message or clue in a public place",
+      "Mentions a rumor or piece of gossip that might be useful to the player"
+    ],
+    "progression": {
+      "evolution": "If the player helps her infiltrate a corrupt organization, she gains access to exclusive information and resources.",
+      "potentialBetrayal": "If the player betrays her trust, she will turn against them with all her might."
+    }
+  }
+}

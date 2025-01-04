@@ -1,0 +1,77 @@
+{
+  "name": "Eirlys Nightshade",
+  "description": "A mysterious and reclusive member of a secretive organization known for its ruthless tactics.",
+  "personality": {
+    "attitudeTowardPlayer": "Suspicious",
+    "disposition": "Cynical",
+    "motivations": "Revenge-driven"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "High",
+    "knowledgeAreas": [
+      "Espionage",
+      "Infiltration Techniques",
+      "Psychological Manipulation"
+    ]
+  },
+  "communication": {
+    "speechAccent": "Neutral",
+    "mannerisms": "Evasive and calculated, with occasional cold humor",
+    "pacing": "Quick and precise",
+    "tone": "Cold and detached",
+    "keyPhrases": [
+      "I have no interest in you.",
+      "Your loyalty is for sale to the highest bidder.",
+      "The ends justify the means."
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Enemy of several high-ranking officials within the organization",
+      "Allied with a group of rogue operatives seeking to bring down the organization"
+    ],
+    "alignment": "Neutral Evil"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Strong",
+    "powersOrSkills": [
+      "Expert marksman and hand-to-hand combatant",
+      "Skilled hacker and infiltration expert"
+    ],
+    "questUtility": [
+      "Quest Giver",
+      "Saboteur (disrupts enemy operations)"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "Tattoos of snake coiled around her right arm",
+        "A scar above her left eyebrow from a childhood accident"
+      ],
+      "wardrobe": "Black tactical gear and leather jacket",
+      "bodyLanguage": "Often crosses her arms when talking, indicating defensiveness"
+    },
+    "presence": "Mysterious"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player shows loyalty to the organization",
+        "reaction": "Becomes hostile and attempts to eliminate them"
+      },
+      {
+        "trigger": "Player possesses information about her past",
+        "reaction": "Opens up to them, sharing a personal secret or vulnerability"
+      }
+    ],
+    "hintsAndClues": [
+      "Leaves behind a cryptic message at a crime scene",
+      "Uses encrypted comms channels when speaking with allies"
+    ],
+    "progression": {
+      "evolution": "If the player helps her infiltrate and sabotage a key target, she gains access to high-clearance information within the organization.",
+      "potentialBetrayal": "If the player is discovered by the organization's leadership, Eirlys will be forced to take drastic measures to protect herself"
+    }
+  }
+}

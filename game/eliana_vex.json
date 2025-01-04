@@ -1,0 +1,74 @@
+{
+  "name": "Eliana Vex",
+  "description": "A brilliant but enigmatic cyberneticist with ties to the underground hacktivist movement.",
+  "personality": {
+    "attitudeTowardPlayer": "Friendly",
+    "disposition": "Cynical",
+    "motivations": "Altruistic"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "Genius",
+    "knowledgeAreas": [
+      "Artificial Intelligence",
+      "Network Security",
+      "Cyber Warfare"
+    ]
+  },
+  "communication": {
+    "speechAccent": null,
+    "mannerisms": "Fidgets with her hands when speaking quickly",
+    "pacing": "Fast and urgent",
+    "tone": "Confident but detached",
+    "keyPhrases": [
+      "The system is only as strong as its weakest link.",
+      "Code is poetry, and I'm the poet.",
+      "We're not just hacking for fun \u2013 we're hacking for justice."
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Collaborator with a group of hacktivists",
+      "Friend and ally to a rogue AI researcher"
+    ],
+    "alignment": "Libertarian"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Weak",
+    "powersOrSkills": null,
+    "questUtility": [
+      "Quest Giver",
+      "Decoy (distracts enemies while the player sneaks past)"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "A cybernetic eye that glows blue in low light",
+        "A series of intricate tattoos on her arms depicting circuitry patterns"
+      ],
+      "wardrobe": "Black leather jacket with silver hardware",
+      "bodyLanguage": "Often leans forward when listening intently"
+    },
+    "presence": "Mysterious"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player tries to force-feed her information",
+        "reaction": "Becomes hostile and attempts to shut down their comms device"
+      },
+      {
+        "trigger": "Player asks for help with a complex hack",
+        "reaction": "Offers expert advice and assistance, but only if the player agrees to keep her involved"
+      }
+    ],
+    "hintsAndClues": [
+      "Subtly mentions a vulnerability in the city's surveillance grid",
+      "Leaves behind a cryptic message scrawled on a whiteboard"
+    ],
+    "progression": {
+      "evolution": "If the player helps her take down a corrupt corporation, she gains access to advanced hacking tools and becomes a key figure in the hacktivist movement.",
+      "potentialBetrayal": "If the player uses her hacking skills for personal gain, she will turn against them."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "airpg"
+version = "0.1.0"
+description = ""
+authors = ["James White <grimkey@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+ollama = "^0.4.5"
+pydantic = "^2.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

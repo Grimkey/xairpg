@@ -1,0 +1,73 @@
+{
+  "name": "Eleanor Wychwood",
+  "description": "A charismatic socialite with ties to the city's underworld, rumored to be searching for a powerful artifact.",
+  "personality": {
+    "attitudeTowardPlayer": "Friendly",
+    "disposition": "Optimistic",
+    "motivations": "Altruistic"
+  },
+  "cognitiveAttributes": {
+    "intelligence": "Average",
+    "knowledgeAreas": [
+      "High Society Politics",
+      "Underworld Informants",
+      "Ancient History"
+    ]
+  },
+  "communication": {
+    "speechAccent": "Neutral American",
+    "mannerisms": "Bubbly and flirtatious, with a tendency to be overly dramatic",
+    "pacing": "Fast and engaging",
+    "tone": "Warm and inviting",
+    "keyPhrases": [
+      "Let's get the party started!",
+      "You have no idea what I've been through.",
+      "We'll make this night unforgettable!"
+    ]
+  },
+  "relationships": {
+    "connections": [
+      "Acquaintance of a prominent crime lord",
+      "Former lover of a powerful vampire"
+    ],
+    "alignment": "Neutral Good"
+  },
+  "roleSpecificTraits": {
+    "combatAbility": "Weak",
+    "powersOrSkills": null,
+    "questUtility": [
+      "Quest Giver",
+      "Social Butterfly (can charm NPCs for information)"
+    ]
+  },
+  "physicalTraits": {
+    "appearance": {
+      "uniqueFeatures": [
+        "A rare blood birthmark on her left cheek"
+      ],
+      "wardrobe": "Glamorous evening gowns and designer accessories",
+      "bodyLanguage": "Often uses sweeping gestures when speaking"
+    },
+    "presence": "Subtle"
+  },
+  "interactivity": {
+    "behaviorTriggers": [
+      {
+        "trigger": "Player mentions her social status",
+        "reaction": "Reveals hidden insecurities and vulnerabilities"
+      },
+      {
+        "trigger": "Player shows genuine concern for her well-being",
+        "reaction": "Becomes more trusting and open"
+      }
+    ],
+    "hintsAndClues": [
+      "Discovers a cryptic message on an invitation card from a mysterious benefactor",
+      "Uncovering rumors about Eleanor's past, hinting at a traumatic event"
+    ],
+    "progression": {
+      "evolution": "If the player helps her uncover the truth behind her blood birthmark, she gains access to exclusive underworld connections.",
+      "potentialBetrayal": "If the player betrays her trust, Eleanor may turn against them with dark magic abilities."
+    }
+  }
+}
