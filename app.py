@@ -2,8 +2,10 @@ from src.npc import NPC
 from src.ai_call import AIModel, Message
 
 
-def main():
-    def do_stuff(msg: str):
+def main():  
+    context = ""
+
+    def do_stuff(msg: str, context: str) -> str:
       """
       This function will be called after the player hits enter.
       Replace this code with whatever action you want to perform.
@@ -15,11 +17,15 @@ def main():
       stream = ai_model.chat([system_message, user_message])
 
       for chunk in stream:
-          print(chunk['message']['content'], end='', flush=True)
+          part = chunk['message']['content']
+          context += part
+          print(part, end='', flush=True)
+
+      return context
 
     ai_model = AIModel()
     print("Loading NPC")
-    npc_data = NPC.from_file('npcs/marlena_graves.json')
+    npc_data = NPC.from_file('game/marlena_graves.json')
 
     system_message = Message(
     role='user',
@@ -34,7 +40,9 @@ Based on this information, describe what happens when the player walks into Marl
     stream = ai_model.chat([system_message])
 
     for chunk in stream:
-        print(chunk['message']['content'], end='', flush=True)
+        part = chunk['message']['content']
+        context += part
+        print(part, end='', flush=True)
 
     print("------------------------------------------------------") 
     print("Press Enter to perform an action. Type 'quit' to exit.")
@@ -46,9 +54,13 @@ Based on this information, describe what happens when the player walks into Marl
         if user_input.lower() == "quit":
             print("Exiting program. Goodbye!")
             break
-
+        # Check if the user wants to quit
+        if user_input.lower() == "context":
+            print(context)
+            continue
+        
         # Call the do_stuff function
-        do_stuff(user_input)
+        context = do_stuff(user_input, context)
 
 if __name__ == "__main__":
     main()

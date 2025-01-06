@@ -1,0 +1,53 @@
+Generate the plans for the following agents:
+	•	Agent_1: {"money":310,"magical_materials":{"Ebonstone":23,"Moonshard Silver":10,"Ashvine Essence":41,"Sanguine Crystal":24,"Shadowglass":35}}
+	•	Agent_2: {"money":288,"magical_materials":{"Ebonstone":31,"Moonshard Silver":49,"Ashvine Essence":18,"Sanguine Crystal":48,"Shadowglass":35}}
+	•	Agent_3: {"money":458,"magical_materials":{"Ebonstone":39,"Moonshard Silver":24,"Ashvine Essence":15,"Sanguine Crystal":35,"Shadowglass":19}}
+	•	Agent_4: {"money":144,"magical_materials":{"Ebonstone":27,"Moonshard Silver":43,"Ashvine Essence":12,"Sanguine Crystal":44,"Shadowglass":6}}
+	•	Agent_5: {"money":421,"magical_materials":{"Ebonstone":8,"Moonshard Silver":27,"Ashvine Essence":27,"Sanguine Crystal":50,"Shadowglass":4}}
+	•	Agent_6: {"money":481,"magical_materials":{"Ebonstone":45,"Moonshard Silver":39,"Ashvine Essence":50,"Sanguine Crystal":4,"Shadowglass":11}}
+	•	Agent_7: {"money":169,"magical_materials":{"Ebonstone":40,"Moonshard Silver":27,"Ashvine Essence":13,"Sanguine Crystal":41,"Shadowglass":9}}
+	•	Agent_8: {"money":417,"magical_materials":{"Ebonstone":28,"Moonshard Silver":22,"Ashvine Essence":37,"Sanguine Crystal":46,"Shadowglass":23}}
+	•	Agent_9: {"money":186,"magical_materials":{"Ebonstone":22,"Moonshard Silver":42,"Ashvine Essence":32,"Sanguine Crystal":4,"Shadowglass":33}}
+	•	Agent_10: {"money":204,"magical_materials":{"Ebonstone":6,"Moonshard Silver":17,"Ashvine Essence":12,"Sanguine Crystal":10,"Shadowglass":16}}
+
+Follow these rules:
+	1.	Action Choices:
+	•	buy: The agent wants to acquire more of a magical material they lack.
+	•	sell: The agent wants to sell excess magical material to earn money.
+	•	barter: The agent trades one material for another material they need.
+	•	steal: The agent tries to steal a material they lack from another agent.
+	•	inquire: The agent seeks information about a material they lack.
+	2.	Plan Fields:
+	•	action: One of the five actions listed above.
+	•	target_item: The magical material involved (if applicable).
+	•	target_agent: The ID of the other agent involved in the action (if applicable).
+	•	amount: The quantity of the material or money involved (if applicable).
+	3.	Inventory Considerations:
+	•	Agents with less than 10 grams of a material might buy, barter, steal, or inquire about that material.
+	•	Agents with more than 40 grams of a material might sell it.
+	•	Agents with less than 100 money might prefer barter or steal over buy.
+	•	Agents with abundant resources might perform inquire actions to expand their opportunities.
+	4.	Targeting Other Agents:
+	•	Agents prefer to interact with others who have a surplus of the material they need.
+	•	Avoid creating cycles (e.g., Agent_1 bartering with Agent_2 while Agent_2 simultaneously barters with Agent_1).
+
+Output Format:
+Generate a JSON object for each agent in this format:
+
+{
+    "Agent_1": {
+        "action": "buy",
+        "target_item": "Moonshard Silver",
+        "target_agent": "Agent_2",
+        "amount": 10
+    },
+    "Agent_2": {
+        "action": "sell",
+        "target_item": "Ashvine Essence",
+        "target_agent": "Agent_3",
+        "amount": 15
+    },
+    ...
+}
+
+Create a plan for all 10 agents. Return only JSON and no markdown.
